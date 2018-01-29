@@ -1,1 +1,195 @@
-/* Montrez nous l'étendue de votre talent ici ;-) */
+@import "scss/variables";
+@import "scss/bootstrap";
+@import "scss/style";
+
+
+
+
+
+h2,h3{
+  color: #dfd8d3 !important;
+}
+
+
+.back-white{
+  background-color: white;
+  padding: 35px;
+  margin-bottom: 0;
+}
+.back-light{
+  background-color: #f8f8f8;
+}
+
+.middletext{
+  z-index: 1000;
+  display: flex; /* contexte sur le parent */
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center; /* alignement vertical */
+}
+.fr{
+  bottom: 15px;
+  right: 0;
+}
+.en-tete{
+  min-height: 330px !important;
+  color: #d8d8db;
+  text-shadow: 0px 0px 6px #B6ADBD;
+}
+.btn-mc{
+  background-color: $red-secondary;
+  padding: 3px 20px;
+  color: $white;
+  width: fit-content;
+  margin: 0 auto;
+  &:hover{
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.backCover{
+  background-size: cover;
+}
+
+.card{
+  border: none !important;
+  p{
+    font-size: 12px;
+  }
+  .back-light{
+    padding: 5px;
+  }
+  .lt{
+    text-decoration: line-through;
+  }
+}
+
+.iconeFR{
+  max-height: 35px;
+}
+
+
+$lg:992px;
+$md:768px;
+
+
+.section{
+  @media (min-width: $lg){
+    .section{
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+    @media (max-width: $lg){
+      .section{
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+    @media (max-width: 768px){
+    .section{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    }
+}
+}
+
+.toright{
+  position: relative;
+  right: -90px;
+  @media (max-width: $lg){
+    .toright{
+      position: relative;
+      right: 0;
+    }
+  }
+
+}
+.toleft{
+  position: relative;
+  left: -90px;
+  @media (max-width: $lg){
+    .toleft{
+      position: relative;
+      left: 0;
+    }
+  }
+}
+
+.backRight{
+  background-position: 100% 0;
+  background-size:49% ;
+  background-repeat: no-repeat;
+  @media (max-width: $md){
+    .backRight{
+      background-size:0% ;
+    }
+  }
+
+  @media (max-width: $lg){
+    .backRight{
+      background-position: 100% 150px;
+    }
+  }
+}
+.backLeft{
+  background-position: 0 100%;
+  background-size:49% ;
+  background-repeat: no-repeat;
+  @media (max-width: $md){
+
+    .backLeft{
+      background-size:0% ;
+    }
+  }
+}
+
+@media (min-width: $lg){
+  .top50{
+    top: 50px;
+  }
+
+}
+
+
+
+
+
+@media (max-width: $lg){
+  .imgAbsRight{
+    position: absolute !important;
+    text-align: right;
+    top: 40px;
+    right: 30px;
+  }
+}
+@media (max-width: $md){
+  .imgAbsRight{
+    position: relative !important;
+    top: 0;
+    right: 0;
+  }
+  .top200{
+    padding-top: 200px !important;
+  }
+  .rel{
+    position: relative;
+    bottom: -150px;
+  }
+  .unreal{
+    position: relative;
+    top: -150px;
+  }
+  .abs{
+    position: absolute;
+    bottom: -150px;
+  }
+
+
+}
+
+@media (min-width: $md){
+  .w70{
+    max-width: 93% !important;
+  }
+}
